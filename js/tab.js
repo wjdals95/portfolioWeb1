@@ -53,7 +53,7 @@ $(function(){
     var linkinfo = ''; //다른곳이랑 겹칠수도 있으니 변수만들기
     $.each(portfolioDB[startNum].p_linkinfo, (index,item) => {
          // for(let i in portfolioDB[startNum].p_linkinfo)
-        linkinfo += `<li><a>${portfolioDB[startNum].p_linkinfo[index]}</a></li>`;
+        linkinfo += `<li><a href="#none">${portfolioDB[startNum].p_linkinfo[index]}</a></li>`;
     })
     $('.p_linkinfo').html(linkinfo)
     }
